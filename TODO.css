@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body{
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    rgb(255, 228, 214),
+    rgb(255, 204, 188)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo{
+  background: rgb(255, 245, 240);
+  padding: 25px 30px;
+  border-radius: 14px;
+  width: 320px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+.tasks h1{
+  font-size: 22px;
+  text-align: center;
+  color: rgb(120, 60, 40);
+  margin-bottom: 4px;
+}
+.tasks p{
+  text-align: center;
+  font-size: 14px;
+  color: rgb(150, 90, 70);
+  margin-bottom: 18px;
+}
+.taskInput{
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid rgb(255, 180, 160);
+  margin-bottom: 10px;
+  font-size: 14px;
+  background: rgb(255, 255, 255);
+}
+.taskInput:focus{
+  outline: none;
+  border-color: rgb(255, 140, 120);
+}
+.addtask{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: rgb(255, 140, 120);
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.addtask:hover{
+  background: rgb(235, 120, 100);
+}
+.list{
+  margin-top: 15px;
+  padding: 0;
+}
+.list li{
+  background: rgb(255, 210, 190);
+  color: rgb(90, 40, 25);
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.list li:hover{
+  background: rgb(255, 190, 170);
+}
